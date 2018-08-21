@@ -19,6 +19,8 @@ pandas \
 BeautifulSoup4 \
 pymysql \
 tqdm \
+lxml \
+twstock \
 youtube_dl && \
 pip install plotly --upgrade
 
@@ -58,7 +60,8 @@ RUN julia -e 'Pkg.init()' && \
     chmod -R go+rx $CONDA_DIR/share/jupyter && \
     rm -rf $HOME/.local && \
     fix-permissions $JULIA_PKGDIR $CONDA_DIR/share/jupyter
-
+#重新指定語言
 ENV LC_ALL=zh_TW.utf8
 ENV LANG=zh_TW.utf8
 ENV LANGUAGE=zh_TW.utf8
+ENV TZ=Asia/Taipei
