@@ -1,5 +1,5 @@
 FROM jupyter/datascience-notebook
-#Version 1.01-master
+#Version 1.1-master
 #change by Justin
 
 ARG TEST_ONLY_BUILD
@@ -16,11 +16,14 @@ sqlite3
 RUN pip install --upgrade pip && \
 pip install \
 pandas \
+lxml \
 BeautifulSoup4 \
 pymysql \
 tqdm \
-youtube_dl && \
-pip install plotly --upgrade
+twstock \
+scripy \
+youtube_dl
+# pip install plotly --upgrade
 
 #pip install package2
 RUN conda install --quiet --yes \
