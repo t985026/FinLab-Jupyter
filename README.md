@@ -1,6 +1,8 @@
 # FinLab-Jupyter
 ## 基本安裝套件
 ### pip
+lxml
+
 pandas
 
 BeautifulSoup4
@@ -14,3 +16,5 @@ youtube_dl
 plotly
 
 TA-Lib
+
+twstock
