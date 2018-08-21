@@ -1,5 +1,6 @@
 FROM jupyter/datascience-notebook
-#Version 1.1
+#Version 1.2
+#master
 #change by Justin
 
 ARG TEST_ONLY_BUILD
@@ -20,9 +21,10 @@ BeautifulSoup4 \
 pymysql \
 tqdm \
 lxml \
+plotly \
 twstock \
-youtube_dl && \
-pip install plotly --upgrade
+youtube_dl
+# pip install plotly --upgrade
 
 #ta-lib
 RUN wget http://prdownloads.sourceforge.net/ta-lib/ta-lib-0.4.0-src.tar.gz && \
