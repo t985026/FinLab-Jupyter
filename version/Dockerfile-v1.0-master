@@ -1,5 +1,5 @@
 FROM jupyter/datascience-notebook
-#Version v1.12-master
+#Version 1.0-master
 #change by Justin
 
 ARG TEST_ONLY_BUILD
@@ -20,24 +20,15 @@ lxml \
 BeautifulSoup4 \
 pymysql \
 tqdm \
-twstock \
-scrapy \
-youtube_dl
+youtube_dl && \
+pip install plotly --upgrade
 
 #pip install package2
 RUN conda install --quiet --yes \
-plotly \
 'dash==0.21.1' \
 'dash-renderer==0.13.0' \
 'dash-html-components==0.11.0' \
 'dash-core-components==0.23.0'
-
-#pip install package2
-RUN conda install --quiet --yes \
-'dash==0.21.1' \
-'dash-renderer==0.13.0' \
-'dash-html-components==0.11.0' \
-dash-core-components==0.23.0
 
 #ta-lib
 RUN wget http://prdownloads.sourceforge.net/ta-lib/ta-lib-0.4.0-src.tar.gz && \
