@@ -1,5 +1,5 @@
 FROM jupyter/datascience-notebook
-#Version 1.1-master
+#Version 1.11-master
 #change by Justin
 
 ARG TEST_ONLY_BUILD
@@ -21,7 +21,7 @@ BeautifulSoup4 \
 pymysql \
 tqdm \
 twstock \
-scripy \
+scrapy \
 youtube_dl
 # pip install plotly --upgrade
 
