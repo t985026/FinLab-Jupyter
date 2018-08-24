@@ -22,8 +22,8 @@ pymysql \
 tqdm \
 twstock \
 scrapy \
-youtube_dl
-# pip install plotly --upgrade
+youtube_dl \
+pip install plotly --upgrade
 
 #pip install package2
 RUN conda install --quiet --yes \
