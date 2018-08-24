@@ -1,5 +1,5 @@
 FROM jupyter/datascience-notebook
-#Version 1.11-master
+#Version v1.12-master
 #change by Justin
 
 ARG TEST_ONLY_BUILD
@@ -22,11 +22,11 @@ pymysql \
 tqdm \
 twstock \
 scrapy \
-youtube_dl \
-pip install plotly --upgrade
+youtube_dl
 
 #pip install package2
 RUN conda install --quiet --yes \
+plotly \
 'dash==0.21.1' \
 'dash-renderer==0.13.0' \
 'dash-html-components==0.11.0' \
