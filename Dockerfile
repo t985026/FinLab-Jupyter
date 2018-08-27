@@ -42,7 +42,7 @@ make && \
 make install && \
 pip install TA-Lib && \
 cd ../ \
-rm -rf ta-lib
+rm -rf ~/ta-lib
 
 ENV LC_ALL=zh_TW.utf8
 ENV LANG=zh_TW.utf8
