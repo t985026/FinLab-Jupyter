@@ -1,22 +1,19 @@
 [![](https://images.microbadger.com/badges/image/jupyter/datascience-notebook.svg)](https://microbadger.com/images/jupyter/datascience-notebook "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/jupyter/datascience-notebook.svg)](https://microbadger.com/images/jupyter/datascience-notebook "Get your own version badge on microbadger.com")
 
-#自製FinLab課程環境
-
-##package
-
-requests
-BeautifulSoup4
-pandas
-youtube_dl
-pymysql
-sqlite
-numpy
-lxml
-dash
-dash_core_components as dcc
-dash_html_components as html
-talib
-twstock
+# 自製FinLab課程環境
+[!]課程網址(https://hahow.in/cr/python-finance)
+## package
+* requests
+* BeautifulSoup4
+* youtube_dl
+* pandas
+* pymysql
+* sqlite
+* numpy
+* lxml
+* dash
+* talib
+* twstock
 
 
 啟動方式(Linux):
