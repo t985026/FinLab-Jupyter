@@ -32,6 +32,13 @@ plotly \
 'dash-html-components==0.11.0' \
 'dash-core-components==0.23.0'
 
+#pip install package2
+RUN conda install --quiet --yes \
+'dash==0.21.1' \
+'dash-renderer==0.13.0' \
+'dash-html-components==0.11.0' \
+dash-core-components==0.23.0
+
 #ta-lib
 RUN wget http://prdownloads.sourceforge.net/ta-lib/ta-lib-0.4.0-src.tar.gz && \
 tar xvfz ta-lib-0.4.0-src.tar.gz && \
