@@ -1,4 +1,6 @@
-[![](https://images.microbadger.com/badges/image/jupyter/datascience-notebook.svg)](https://microbadger.com/images/jupyter/datascience-notebook "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/jupyter/datascience-notebook.svg)](https://microbadger.com/images/jupyter/datascience-notebook "Get your own version badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/t985026/finlab-jupyter.svg)](https://microbadger.com/images/t985026/finlab-jupyter "Get your own image badge on microbadger.com")
+
+[![](https://images.microbadger.com/badges/version/t985026/finlab-jupyter.svg)](https://microbadger.com/images/t985026/finlab-jupyter "Get your own version badge on microbadger.com")
 
 # 自製FinLab課程環境
 [[課程網址](https://hahow.in/cr/python-finance)]
