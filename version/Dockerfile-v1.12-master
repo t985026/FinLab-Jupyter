@@ -1,5 +1,5 @@
-FROM jupyter/scipy-notebook
-#Version v1.13-master
+FROM jupyter/datascience-notebook
+#Version v1.12-master
 #change by Justin
 
 ARG TEST_ONLY_BUILD
