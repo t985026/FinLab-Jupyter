@@ -1,5 +1,5 @@
-FROM jupyter/scipy-notebook
-#Version v1.14-master
+FROM jupyter/base-notebook
+#Version v2.00-Alpha
 #change by Justin
 
 ARG TEST_ONLY_BUILD
@@ -9,11 +9,13 @@ USER root
 RUN apt-get update && \
 apt-get install -y --no-install-recommends \
 language-pack-zh-han* \
+python-pip \
+gcc \
 sqlite \
 sqlite3
 
 #pip install package
-RUN pip install --upgrade pip && \
+RUN sudo pip install --upgrade pip && \
 pip install \
 pandas \
 lxml \
@@ -22,15 +24,15 @@ BeautifulSoup4 \
 pymysql \
 tqdm \
 twstock \
-scrapy \
 youtube_dl
 
-#conda install package2
+#pip install package2
 RUN conda install --quiet --yes \
 'dash==0.21.1' \
 'dash-renderer==0.13.0' \
 'dash-html-components==0.11.0' \
-dash-core-components==0.23.0
+'dash-core-components==0.23.0' \
+Scrapy
 
 #ta-lib
 RUN wget http://prdownloads.sourceforge.net/ta-lib/ta-lib-0.4.0-src.tar.gz && \
