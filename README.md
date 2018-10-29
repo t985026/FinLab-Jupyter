@@ -8,7 +8,7 @@
 (網頁爬取)  
 * requests
 * BeautifulSoup4
-* pyquery  
+* [pyquery](https://aji.tw/slides/pycon2017 "投影片")
 
 (資料分析)
 * pandas  
