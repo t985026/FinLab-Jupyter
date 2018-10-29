@@ -28,12 +28,14 @@ t985026/finlab-jupyter start-notebook.sh \
 --NotebookApp.token=''
 ```
 啟動方式(Windows Use Linux Core):
+* 請使用PowerShell
+
 假如要對應Windows的`D:/Jupyter`，要先開啟Docker設定中的分享
 ![圖片](.\img\share_storage.png)
 
 command：
 ```shell
-docker run -d --name=jupyter --restart=always `
+docker run -id --name=jupyter --restart=always `
 -p 8888:8888 `
 -v D:\Jupyter:/home/jovyan/work `
 t985026/finlab-jupyter start-notebook.sh `
