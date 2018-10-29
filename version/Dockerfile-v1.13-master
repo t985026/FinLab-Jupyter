@@ -1,5 +1,5 @@
 FROM jupyter/scipy-notebook
-#Version v1.14-master
+#Version v1.13-master
 #change by Justin
 
 ARG TEST_ONLY_BUILD
@@ -17,7 +17,6 @@ RUN pip install --upgrade pip && \
 pip install \
 pandas \
 lxml \
-pyquery \
 BeautifulSoup4 \
 pymysql \
 tqdm \
@@ -43,7 +42,7 @@ dash-core-components==0.23.0
 #ta-lib
 RUN wget http://prdownloads.sourceforge.net/ta-lib/ta-lib-0.4.0-src.tar.gz && \
 tar xvfz ta-lib-0.4.0-src.tar.gz && \
-rm -rf ta-lib-*.tar.gz && \
+rm -rf ta-lib-0.4.0-src.tar.gz && \
 cd ta-lib && \
 ./configure --prefix=/usr &&\
 make && \

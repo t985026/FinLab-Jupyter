@@ -5,15 +5,27 @@
 # 自製FinLab課程環境
 [[課程網址](https://hahow.in/cr/python-finance)]
 ## package
+(網頁爬取)  
 * requests
 * BeautifulSoup4
-* youtube_dl
-* pandas
-* pymysql
-* sqlite
+* pyquery  
+
+(資料分析)
+* pandas  
 * numpy
 * lxml
+
+(影片下載)
+* youtube_dl  
+
+(資料庫連接)
+* pymysql
+* sqlite
+
+(視覺化)
 * dash
+
+(股票分析)
 * talib
 * twstock
 
