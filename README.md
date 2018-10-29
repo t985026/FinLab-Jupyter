@@ -9,6 +9,7 @@
 * requests
 * BeautifulSoup4
 * [pyquery](https://aji.tw/slides/pycon2017 "投影片")
+* Scrapy
 
 (資料分析)
 * pandas  
