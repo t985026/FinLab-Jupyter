@@ -31,7 +31,7 @@ t985026/finlab-jupyter start-notebook.sh \
 * 請使用PowerShell
 
 假如要對應Windows的`D:/Jupyter`，要先開啟Docker設定中的分享
-![圖片](./blob/latest/img/share_storage.png)
+![圖片](https://github.com/t985026/FinLab-Jupyter/blob/master/img/share_storage.png)
 
 command：
 ```shell
