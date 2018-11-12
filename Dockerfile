@@ -20,6 +20,7 @@ pip install \
 pandas \
 lxml \
 pyquery \
+fake_useragent \
 BeautifulSoup4 \
 pymysql \
 tqdm \
