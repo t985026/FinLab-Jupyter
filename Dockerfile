@@ -32,6 +32,7 @@ RUN conda install --quiet --yes \
 'dash-renderer==0.13.0' \
 'dash-html-components==0.11.0' \
 'dash-core-components==0.23.0' \
+fake-useragent \
 Scrapy
 
 #ta-lib
