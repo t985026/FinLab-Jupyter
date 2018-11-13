@@ -1,4 +1,4 @@
-FROM jupyter/base-notebook
+FROM jupyter/scipy-notebook
 #Version v2.00-Alpha
 #change by Justin
 
