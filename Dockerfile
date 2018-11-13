@@ -20,7 +20,6 @@ pip install \
 pandas \
 lxml \
 pyquery \
-fake_useragent \
 BeautifulSoup4 \
 pymysql \
 tqdm \
@@ -33,6 +32,7 @@ RUN conda install --quiet --yes \
 'dash-renderer==0.13.0' \
 'dash-html-components==0.11.0' \
 'dash-core-components==0.23.0' \
+fake_useragent \
 Scrapy
 
 #ta-lib
@@ -46,6 +46,12 @@ make install && \
 pip install TA-Lib && \
 cd ../ \
 rm -rf ~/ta-lib
+
+COPY ./ttf/* /opt/conda/lib/python3.6/site-packages/matplotlib/mpl-data/fonts/ttf/
+COPY ./matplotlibrc /home/jovyan/matplotlibrc
+
+RUN rm -rf /root/.cache/matplotlib/* \
+rm -rf /home/jovyan/.cache/matplotlib/fontList.json
 
 ENV LC_ALL=zh_TW.utf8
 ENV LANG=zh_TW.utf8
