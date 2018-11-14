@@ -47,7 +47,7 @@ cd ../ \
 rm -rf ~/ta-lib
 
 COPY ./ttf/* /opt/conda/lib/python3.6/site-packages/matplotlib/mpl-data/fonts/ttf/
-COPY ./matplotlibrc /home/jovyan/matplotlibrc
+COPY ./matplotlibrc /opt/conda/lib/python3.6/site-packages/matplotlib/mpl-data/matplotlibrc
 
 RUN rm -rf /root/.cache/matplotlib/* \
 rm -rf /home/jovyan/.cache/matplotlib/fontList.json
