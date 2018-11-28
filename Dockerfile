@@ -1,5 +1,5 @@
 FROM jupyter/scipy-notebook
-#Version v2.00-Alpha
+#Version v2.00-latest
 #change by Justin
 
 ARG TEST_ONLY_BUILD
