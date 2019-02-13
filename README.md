@@ -4,20 +4,24 @@
 
 # 自製FinLab課程環境
 [[課程網址](https://hahow.in/cr/python-finance)]
+
+**已修正Matplotlib 繪圖中文字無法正常顯示問題**
+**直接調用即可**
+
 ## package
-(網頁爬取)  
+(網頁爬取)
 * requests
 * BeautifulSoup4
 * [pyquery](https://aji.tw/slides/pycon2017 "投影片")
 * Scrapy
 
 (資料分析)
-* pandas  
+* pandas
 * numpy
 * lxml
 
 (影片下載)
-* youtube_dl  
+* youtube_dl
 
 (資料庫連接)
 * pymysql
@@ -31,7 +35,7 @@
 * twstock
 
 
-啟動方式(Linux):  
+啟動方式(Linux):
 ```shell
 docker run -d --name=ds-jupyter --restart=always \
 -p 8888:8888 \

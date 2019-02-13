@@ -19,6 +19,7 @@ RUN sudo pip install --upgrade pip && \
 pip install \
 pandas \
 lxml \
+fake_useragent \
 pyquery \
 BeautifulSoup4 \
 pymysql \
