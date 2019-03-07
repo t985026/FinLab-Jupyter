@@ -40,7 +40,7 @@ cd ta-lib && \
 make && \
 make install && \
 pip install TA-Lib && \
-cd ../ \
+cd .. \
 rm -rf ta-lib
 
 COPY ./ttf/* /opt/conda/lib/python3.6/site-packages/matplotlib/mpl-data/fonts/ttf/
